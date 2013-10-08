@@ -1,7 +1,11 @@
 <h1>Here's all the things to do:</h1>
 
-<form method="post" action="/tasks">
+<form method="post" action="/todos">
   <label> Put your damn task here! </label>
-    <input type="text" name="new_task">
+    <input type="text" name="task">
     <input type="submit">  
 </form>
+
+<% @todos.each do |task| %>
+  <%= task %>
+<% end %>
