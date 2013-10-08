@@ -15,3 +15,8 @@ set :database, ENV['DATABASE_URL']
 get '/' do
   erb :index
 end
+
+post '/tasks' do
+  "Your task is: #{params[:new_task]}"
+end
+
