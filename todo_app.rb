@@ -22,4 +22,8 @@ post '/todos' do
   "Your task is: #{params[:task]}"
   redirect '/'
 end
-
+ 
+post '/completed/:id' do
+  Todo.find(params[:id]).destroy
+  redirect '/'
+end
