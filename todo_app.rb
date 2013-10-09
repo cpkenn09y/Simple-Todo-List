@@ -8,6 +8,9 @@ require 'models/todo'
 
 # This loads environment variables from the .env file
 require 'dotenv'
+
+ActiveRecord::Base.establish_connection(ENV['DATABASE)URL'] || "postgres://localhost/todos")
+
 Dotenv.load
 
 set :database, ENV['DATABASE_URL']
