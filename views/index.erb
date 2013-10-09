@@ -1,1 +1,16 @@
-<h1>Here's all the things to do:</h1>
+<h1>Here's all the things to do RIGHTNOW:</h1>
+
+<form method="post" action="/todos">
+  <label> Put your task here! </label>
+    <input type="text" name="task">
+    <input type="submit">  
+</form>
+
+<% @todos.each do |line| %>
+  <li> <%= line.task %> 
+    <form method="post" action="/completed/<%=line.id%>">
+      <button type="completed">Completed</button>
+    </form>
+  </li> 
+<% end %>  
+
