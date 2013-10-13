@@ -73,3 +73,12 @@ There are two features in this amazingly powerful todopplication:
 1. `git push heroku` pushes the master branch to heroku
 1. `heroku run rake db:migrate` migrates the database on heroku
 
+----------------------------
+To Run Locally:
+
+1) Create the local database
+  -> createdb todos
+
+2) Create database table
+  -> rake db:migrate
+
