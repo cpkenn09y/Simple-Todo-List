@@ -17,6 +17,7 @@ set :database, ENV['DATABASE_URL']
 
 get '/' do
   @todos = Todo.all
+  @heart = "<3"
   erb :index
 end
 
@@ -25,7 +26,7 @@ post '/todos' do
   "Your task is: #{params[:task]}"
   redirect '/'
 end
- 
+
 post '/completed/:id' do
   Todo.find(params[:id]).destroy
   redirect '/'
