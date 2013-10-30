@@ -3,7 +3,6 @@ ruby "1.9.3"
 
 gem 'sinatra'
 gem 'sinatra-activerecord'
-gem 'dotenv'
 
 
 group :production, :staging do
@@ -26,6 +25,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'shotgun'
   gem 'capybara'
+  gem 'dotenv'
   gem 'rspec'
   gem 'tux'
 end

@@ -7,16 +7,20 @@ require 'models/todo'
 
 
 # This loads environment variables from the .env file
-require 'dotenv'
 
 ActiveRecord::Base.establish_connection(ENV['DATABASE)URL'] || "postgres://localhost/todos")
 
-Dotenv.load
+begin
+  require 'dotenv'
+  Dotenv.load
+rescue LoadError
+end
+
 
 set :database, ENV['DATABASE_URL']
 
 get '/' do
-  @todos = Todo.all
+  @todos = Todo.all.reverse
   erb :index
 end
 
@@ -25,7 +29,7 @@ post '/todos' do
   "Your task is: #{params[:task]}"
   redirect '/'
 end
- 
+
 post '/completed/:id' do
   Todo.find(params[:id]).destroy
   redirect '/'

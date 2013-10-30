@@ -1,3 +1,9 @@
+TO RUN THIS PROGRAM LOCALLY:
+1) $ createdb todos
+2) $ rake db:schema:load
+3) $ shotgun
+4) open localhost:9393
+
 # sinatra-todos
 1. [Learning Objectives](#learning-objectives)
 1. [Instructions](#instructions)
