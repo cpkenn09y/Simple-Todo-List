@@ -4,6 +4,15 @@ TO RUN THIS PROGRAM LOCALLY:
 3) $ shotgun
 4) open localhost:9393
 
+RESOURCES FOR NEW RELIC LAUNCH:
+https://rpm.newrelic.com/accounts/475727/applications/setup
+
+https://docs.newrelic.com/docs/ruby/new-relic-for-ruby#troubleshooting
+
+https://docs.newrelic.com/docs/ruby/recording-deployments-with-the-ruby-agent
+
+https://docs.newrelic.com/docs/ruby/ruby-agent-installation
+
 # sinatra-todos
 1. [Learning Objectives](#learning-objectives)
 1. [Instructions](#instructions)
