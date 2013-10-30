@@ -2,8 +2,9 @@ $LOAD_PATH.unshift(File.expand_path('.'))
 
 require 'sinatra'
 require 'sinatra/activerecord'
-
+require 'new_relic/recipes'
 require 'models/todo'
+require 'new_relic'
 
 
 # This loads environment variables from the .env file

@@ -3,7 +3,7 @@ ruby "1.9.3"
 
 gem 'sinatra'
 gem 'sinatra-activerecord'
-
+gem 'newrelic_rpm'
 
 group :production, :staging do
 # Bundler lets you use groups to only install gems in particular environments
