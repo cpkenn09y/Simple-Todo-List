@@ -3,8 +3,8 @@
 * This app is created using Sinatra (we had just learned Sinatra a few days prior). This simple to do list was completed within a few hours
 
 ## Collaborators:
-*[@cpkenn09y](https://github.com/cpkenn09y)
-*[@JonathanTR](https://github.com/JonathanTR)
+* [@cpkenn09y](https://github.com/cpkenn09y)
+* [@JonathanTR](https://github.com/JonathanTR)
 
 ## To Run This Program Locally:
 1. $ createdb todos
