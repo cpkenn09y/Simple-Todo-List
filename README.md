@@ -1,10 +1,18 @@
-TO RUN THIS PROGRAM LOCALLY:
-1) $ createdb todos
-2) $ rake db:schema:load
-3) $ shotgun
-4) open localhost:9393
+# Simple To Do List
+* A simple To Do List that allows users to create new tasks to add to their to do list. They are able to delete completed tasks. Tasks are listed in reverse chronological order meaning that the most recent additions are at the top
+* This app is created using Sinatra (we had just learned Sinatra a few days prior). This simple to do list was completed within a few hours
 
-# sinatra-todos
+## Collaborators:
+*[@cpkenn09y](https://github.com/cpkenn09y)
+*[@JonathanTR](https://github.com/JonathanTR)
+
+## To Run This Program Locally:
+1. $ createdb todos
+2. $ rake db:schema:load
+3. $ shotgun
+4. open localhost:9393
+
+## sinatra-todos
 1. [Learning Objectives](#learning-objectives)
 1. [Instructions](#instructions)
 1. [Helpful Resources](#helpful-resources)
